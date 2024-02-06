@@ -1,0 +1,66 @@
+body{
+    background-image: url('../imgs/pattern.webp');
+    background-color: rgba(0, 0, 0, 0.946);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-blend-mode: multiply;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.793), rgba(0, 0, 0, 0));
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    font-size: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+  
+}
+a:hover{
+      transition: 200ms ease-in-out;
+    font-size: 22px
+}
+
+.brand{
+    font-size:1.5rem;
+}
+button{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 8px 15px;
+    margin: 2px;
+
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.sub-menu{
+    position: absolute;
+    padding: 8px;
+    border: .1px solid rgba(128, 128, 128, 0.356);
+    list-style: none;
+    display: none;
+}
+
+.has-sub:hover{
+    .sub-menu{
+        display: block;
+    }
+}
